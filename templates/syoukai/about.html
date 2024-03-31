@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+
+  <div id="container">
+    <div id="contents">
+
+      <div id="main">
+
+        <section>
+
+          <h2>日常アニメ</h2>
+
+          <h3><a href="https://www.tbs.co.jp/anime/k-on/" target="_blank">けいおん!</a></h3>
+          <img src="{% static 'syoukai/images/15.png' %}" onclick="expandImage(this)">
+          <p>春、新入生がクラブを決めるころ。田井中律(たいなか りつ)は幼馴染の秋山澪(あきやま みお)を連れて軽音部の見学へ行く。
+            しかし部員全員が卒業してしまった軽音部は、あらたに4人の部員が集まらないと廃部になってしまうという。
+            琴吹紬(ことぶき つむぎ)という仲間を加えて、最後の一人をさがしているころ、
+            ｢軽音部｣を軽い音楽(口笛など)と勘違いしていた楽器初心者・平沢唯(ひらさわ ゆい)が入部してくる。</p>
+
+          <h3><a href="https://yurucamp.jp/first/" target="_blank">ゆるキャン</a></h3>
+          <img src="{% static 'syoukai/images/16.png' %}" onclick="expandImage(this)">
+          <p>これは、ある冬の日の物語。静岡から山梨に引っ越してきた女子高校生・なでしこは、“千円札の絵にもなっている富士山”を見るために自転車を走らせて本栖湖まで行ったものの、
+            あいにく天気はくもり空。富士山も望めず、疲れ果てたなでしこはその場で眠りこけてしまう。目覚めてみるとすっかり夜。初めての場所で、帰り道もわからない。
+            心細さに怯えるなでしこを救ったのは、1人キャンプ好きの女の子・リンだった。冷えた身体を温めるために焚き火にあたる２人。
+            ぱちぱちと薪の爆ぜる音が、湖畔の静寂に沁み込んでいく。焚き火を囲み、カレー麺をすすりながら会話するなでしことリン。
+            やがて2人が待ちに待った瞬間が訪れる。「見えた……ふじさん……」なでしことリン、２人の出会いから始まるアウトドア系ガールズストーリー。</p>
+
+          <h3><a href="https://gochiusa.com/01/" target="_blank">ご注文はうさぎですか？</a></h3>
+          <img src="{% static 'syoukai/images/17.png' %}" onclick="expandImage(this)">
+          <p>この春から高校に通うべく新しい街にやってきたココア。道に迷って偶然に喫茶ラビットハウスに入るが、実は、そこが彼女が住み込むことになっていた喫茶店だった。
+            ちっちゃくてクールなチノ、軍人気質なリゼ、おっとり和風な千夜、気品あふれる庶民派シャロと全方位的なかわいさの登場人物に、チノの同級生マヤ＆メグ、
+            常連客の青山ブルーマウンテン先生も加わってラビットハウスは今日もすべてがかわいい！</p>
+
+          <h3><a href="https://bocchi.rocks/tv/" target="_blank">ぼっち・ざ・ろっく</a></h3>
+          <img src="{% static 'syoukai/images/18.png' %}" onclick="expandImage(this)">
+          <p>ぼっちちゃん」こと後藤ひとりは、ギターを愛する孤独な少女。家で一人寂しく弾くだけの毎日だったが、ひょんなことから伊地知虹夏が率いる「結束バンド」に加入することに。
+            人前での演奏に不慣れな後藤は、立派なバンドマンになれるのか――</p>
+
+          <h3><a href="https://www.vap.co.jp/barakamon/" target="_blank">ばらかもん</a></h3>
+          <img src="{% static 'syoukai/images/19.png' %}" onclick="expandImage(this)">
+          <p>書道界の重鎮を殴った罰として、日本西端の島で一人暮らしを始めることになった若きイケメン書道家・半田清舟。
+            都会育ちで神経質な｢半田先生｣の前に現れるのは、自由奔放で個性豊かな島民ばかりで……!?慣れない田舎暮らしの洗礼を受けながら、
+            書道家として人として少しずつ成長していく青年のハートフル日常島コメディ!!</p>
+
+          <h3><a href="http://www.hozukino-reitetsu.com/" target="_blank">鬼灯の冷徹</a></h3>
+          <img src="{% static 'syoukai/images/20.png' %}" onclick="expandImage(this)">
+          <p>これは地獄のお話。戦後の人口爆発、悪霊の凶暴化、地獄に亡者があふれかえった今日、人手不足に喘ぐ地獄は前代未聞の混乱を極めていた。
+            そんな中、あたふたする閻魔大王に代わって、さまざまな問題の後始末をする陰の傑物が。
+            彼の名は閻魔大王の第一補佐官・鬼灯。亡者から仕事をサボる閻魔大王まで容赦なく呵責する鬼灯の、忙しくも案外楽しげな地獄の毎日が今ここに登場!</p>
+
+          <h3><a href="https://www.vap.co.jp/flyingwitch/" target="_blank">ふらいんぐうぃっち</a></h3>
+          <img src="{% static 'syoukai/images/21.png' %}" onclick="expandImage(this)">
+          <p>自然が多く、資源が豊富な東北地方に住むことが多い魔女達には、｢15歳になったら一人立ちし、社会に出る。｣そんなしきたりがあるのだとか…。
+            木幡真琴、魔女。15歳の春。高校入学をすることになった彼女は、一人前の魔女になるため、黒猫のチトと一緒に青森の親戚の家に引っ越してきます。
+            久しぶりに再会した又いとこの圭や千夏、新しく友達になった、なお達と過ごす悠々自適な毎日は楽しいことばかり。
+            時折起こるちょっと不思議な出来事と魔女の修行もほどほどに、今日も楽しく過ごします。のんびり魔女の青森でのまったり生活、始まります。</p>
+
+          <h3><a href="https://teibotv.com/" target="_blank">放課後ていぼう日誌</a></h3>
+          <img src="{% static 'syoukai/images/22.png' %}" onclick="expandImage(this)">
+          <p>都会から田舎に引っ越してきた鶴木陽渚は、生き物が苦手なインドア派。手芸部に入って楽しい高校生活を過ごす予定が、
+            散歩中に黒岩悠希と出会ったことがきっかけで謎の「ていぼう部」に入部させられてしまい、釣りをはじめることに・・・。
+            個性的な部員たちに囲まれて、陽渚の高校生活どうなるの！？</p>
+
+          <h3><a href="https://www.ten-sura.com/anime/tensura-nikki" target="_blank">転スラ日記</a></h3>
+          <img src="{% static 'syoukai/images/23.png' %}" onclick="expandImage(this)">
+          <p>「転生したらスライムだった件」では語られなかった、「魔物の国テンペスト」でのリムルたちの賑やかでたまに、騒がしい日々の暮らしがここに！</p>
+
+          <h3><a href="http://newgame-anime.com/" target="_blank">NEW　GAME！</a></h3>
+          <img src="{% static 'syoukai/images/24.png' %}" onclick="expandImage(this)">
+          <p>高校を卒業後、幼い頃に夢中になって遊んでいたゲーム《フェアリーズストーリー》を制作したゲーム会社であるイーグルジャンプに新入社員として入社した涼風青葉は、《
+            フェアリーズストーリー》のキャラクターデザインを手掛けた憧れの八神コウに出会う。憧れの人の下で働くことになった青葉は、初めてのお仕事に戸惑いながらも、
+            コウをはじめ個性的な先輩社員たちに助けられながら、社会人としての第一歩を踏み出していく。</p>
+
+
+        </section>
+
+      </div>
+      <!--/#main-->
+      <script>
+        // 画像を拡大表示するJavaScript関数
+        function expandImage(imgElement) {
+          // クリックされた画像のsrc属性を取得
+          var imgSrc = imgElement.src;
+
+          // モーダルを表示するためのdiv要素を作成
+          var modal = document.createElement('div');
+          modal.className = 'modal';
+          modal.style.display = 'block';
+
+          // 拡大表示される画像を表示するためのimg要素を作成
+          var modalImg = document.createElement('img');
+          modalImg.src = imgSrc;
+
+          // 拡大表示される画像をクリックしたらモーダルを閉じる
+          modalImg.onclick = function () {
+            modal.style.display = 'none';
+          };
+
+          // モーダルに画像を追加
+          modal.appendChild(modalImg);
+
+          // モーダルをbody要素に追加
+          document.body.appendChild(modal);
+        }
+      </script>
+
+</body>
+
+</html>
+{% endblock %}
